@@ -22,21 +22,21 @@ function (out) {
 		btn = this.$s('button'),
 		showFirstLast = this._showFirstLast ? '' : 'display: none;';
 	
-	out.push('<div name="', uuid, '"', this.domAttrs_(), '><ul>',
-			'<li style="' , showFirstLast, '"><a name="', uuid, '-first" class="', btn, ' ', this.$s('first'),
-				'" href="javascript:;"><i class="z-paging-icon z-icon-angle-double-left"></i></a></li>',
-			'<li><a name="', uuid, '-prev" class="', btn, ' ', this.$s('previous'),
-				'" href="javascript:;"><i class="z-paging-icon z-icon-angle-left"></i></a></li>',
+	out.push('<nav name="', uuid, '"', this.domAttrs_(), ' aria-label="paging of ', uuid, '"><ul>',
+			'<li style="' , showFirstLast, '"><button name="', uuid, '-first" class="', btn, ' ', this.$s('first'),
+				'"><i class="z-paging-icon z-icon-angle-double-left"></i></button></li>',
+			'<li><button name="', uuid, '-prev" class="', btn, ' ', this.$s('previous'),
+				'"><i class="z-paging-icon z-icon-angle-left"></i></button></li>',
 			'<li><input name="',
 				uuid, '-real" class="', this.$s('input'), '" type="text" value="',
 				this.getActivePage() + 1, '" size="3"></input><span class="',
 				this.$s('text'), '"> / ', this.getPageCount(), '</span></li>',
-			'<li><a name="', uuid, '-next" class="', btn, ' ', this.$s('next'),
-				'" href="javascript:;"><i class="z-paging-icon z-icon-angle-right"></i></a></li>',
-			'<li style="' , showFirstLast, '"><a name="', uuid, '-last" class="', btn, ' ', this.$s('last'),
-				'" href="javascript:;"><i class="z-paging-icon z-icon-angle-double-right"></i></a></li></ul>');
+			'<li><button name="', uuid, '-next" class="', btn, ' ', this.$s('next'),
+				'"><i class="z-paging-icon z-icon-angle-right"></i></button></li>',
+			'<li style="' , showFirstLast, '"><button name="', uuid, '-last" class="', btn, ' ', this.$s('last'),
+				'"><i class="z-paging-icon z-icon-angle-double-right"></i></button></li></ul>');
 	
 	if (this.isDetailed())
 		this._infoTags(out);
-	out.push('</div>');
+	out.push('</nav>');
 }
