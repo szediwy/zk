@@ -16,7 +16,7 @@ function (out, skipper) {
 	var uuid = this.uuid,
 		title = this.getTitle(),
 		caption = this.caption,
-		btnRenderer = zul.wnd.ButtonRenderer,
+		btnRenderer = zul.wgt.ButtonRenderer,
 		tabi = this._tabindex;
 
 	out.push('<div', this.domAttrs_({tabindex: 1}), '>');//tabindex attribute will be set in the child elements

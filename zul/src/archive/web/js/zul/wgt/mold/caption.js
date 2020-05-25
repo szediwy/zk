@@ -16,7 +16,7 @@ function (out) {
 	var p = this.parent,
 		cnt = this.domContent_(),
 		tabi = this._tabindex || 0,
-		btnRenderer = zul.wnd.ButtonRenderer;
+		btnRenderer = zul.wgt.ButtonRenderer;
 	
 	// ZK-2209: should show correct when caption has child
 	out.push('<div', this.domAttrs_(), '>',

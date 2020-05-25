@@ -1,9 +1,9 @@
-/** @class zul.wnd.ButtonRenderer
+/** @class zul.wgt.ButtonRenderer
  * The renderer used to render buttons of a window.
  * It is designed to be overridden
  * @since 9.1.0
  */
-zul.wnd.ButtonRenderer = {
+zul.wgt.ButtonRenderer = {
 	/** Redraws the collapse button HTML.
 	 *
 	 * @param zul.wnd.Panel wgt the panel

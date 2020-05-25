@@ -12,7 +12,6 @@ Copyright (C) 2008 Potix Corporation. All Rights Reserved.
 -->
 
 <package name="zul.wnd" language="xul/html" depends="zul.wgt">
-	<script src="ButtonRenderer.js" jsdoc="true"/>
 	<widget name="Window"/>
 	<widget name="Panel"/>
 	<widget name="Panelchildren"/>

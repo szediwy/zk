@@ -19,7 +19,7 @@ function (out, skipper) {
 		contentStyle = this.getContentStyle(),
 		contentSclass = this.getContentSclass(),
 		tabi = this._tabindex,
-		btnRenderer = zul.wnd.ButtonRenderer;
+		btnRenderer = zul.wgt.ButtonRenderer;
 
 	out.push('<div', this.domAttrs_({tabindex: 1}), '>');//tabindex attribute will be set in the child elements
 	
